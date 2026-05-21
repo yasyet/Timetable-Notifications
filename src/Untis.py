@@ -71,3 +71,7 @@ class Client:
             return response_json
         else:
             return None
+        
+class canceledLesson:
+    def __init__(self):
+        pass
