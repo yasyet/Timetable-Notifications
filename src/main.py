@@ -5,6 +5,7 @@ def main():
     client = untis.Client()
 
     # Create copy of timetable
+    
 
     # Print out timetable
 

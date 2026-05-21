@@ -2,7 +2,7 @@ import requests
 import config
 
 class Client:
-    base_url = "https://gymgan.webuntis.com/"
+    base_url = "https://gymgan.webuntis.com/Webuntis/api/"
 
     def __init__(self):
         self.USERNAME = config.USERNAME
@@ -15,7 +15,7 @@ class Client:
         self.bearer_token = self.generateBearerToken(config.CLIENT_HEADERS)
 
     def generateBearerToken(self, headers):
-        endpoint = "WebUntis/api/token/new"
+        endpoint = "token/new"
         url = f"{self.base_url}{endpoint}"
 
         response = requests.get(url=url, headers=headers)
